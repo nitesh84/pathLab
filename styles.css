@@ -359,3 +359,452 @@ section .section-container img{
     color: #333;
     margin-top: 5px;
 }
+
+
+/* Covid */
+
+.covid .section-container{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    gap: 25px;
+}
+
+.covid-left,.covid-right{
+    width: 100%;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.covid .section-container .coivd-left .left-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.covid .section-container .covid-left .left-container img{
+    width: 130%;
+    padding-left: 15px;
+}
+.covid .section-container .covid-right .right-container img{
+    width: 130%;
+    padding-left: 15px;
+    /* border: 10px solid green; */
+}
+
+/* Explore */
+
+.explore .section-container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.explore .section-container h1 {
+    text-align: left; /* Aligns heading to the start */
+    margin: 0 0 10px; /* Adds some space below the heading */
+    padding-left: 10px; /* Ensures the heading aligns with carousel content */
+    font-size: 1.5rem; /* Adjust font size if needed */
+}
+
+.explore .main-carousel {
+    width: 100%; /* Makes carousel take full width */
+    margin: 0 auto; /* Centers the carousel within the container */
+    overflow: hidden; /* Ensures no extra content is visible outside */
+}
+
+.explore .carousel-cell {
+    width: 100%; /* Ensures each cell takes the full width of the carousel */
+}
+
+.explore .carousel-cell img {
+    width: 100%; /* Ensures images are responsive */
+    height: auto; /* Keeps the aspect ratio intact */
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Promotions */
+
+.promotions{
+    position: relative;
+}
+.promotions .section-container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.promotions .section-container h1 {
+    text-align: left;
+    margin: 0 0 10px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+
+.promotions .main-carousel {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.promotions .carousel-cell {
+    width: 30%; /* Each image takes 30% of the carousel width */
+    position: relative;
+    height: 300px;
+    margin-right: 10px; /* Adds space between the cells */
+    border-radius: 10px; /* Optional: Rounds the corners of each cell */
+}
+
+.promotions .carousel-cell img {
+    width: 100%;
+    height: 300px; /* Set a specific height */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    display: block;
+    border-radius: 10px; /* Match the cell's rounded corners */
+}
+
+.promotions .carousel-cell .overlay {
+    position: absolute; /* Position overlay on top of the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.promotions .carousel-cell .overlay p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Why */
+.why {
+    position: relative;
+}
+
+.why .section-container {
+    padding: 20px;
+}
+
+.why .section-container h1 {
+    text-align: left; /* Aligns the heading to the left */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.why .section-container .why-content-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the content to wrap to the next line */
+    justify-content: center; /* Aligns the content to the center */
+    gap: 20px; /* Adds space between individual .why-content blocks */
+    padding: 25px;
+}
+
+.why .why-content {
+    display: flex;
+    align-items: center; /* Centers the items vertically within each block */
+    justify-content: flex-start; /* Aligns content to the left */
+    border: 2px solid blue; /* Optional: Border for each .why-content block */
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(33.333% - 20px); /* Ensures three items per row */
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+}
+
+.why .why-content img {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px; /* Adds space between the image and the text */
+}
+
+.why .why-content .group {
+    width: 180px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why .why-content .group p:nth-child(1) {
+    font-weight: 700;
+    color: blue;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.why .why-content .group p:nth-child(2) {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa; /* Default background color for the footer */
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1400px; /* Max width for the content */
+    margin: 0 auto; /* Center the footer content */
+    z-index: 1;
+    position: relative; /* Ensure this content stays above the background */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    background-color: #FFD700; /* Golden background for the sections */
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #0056b3;
+}
+
+.footer-bottom {
+    background-color: #0056b3; /* Blue background for the copyright section */
+    color: white;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #FFD700; /* Golden color for hover effect */
+}
+
+.footer-social {
+    margin-top: 15px;
+}
+
+.footer-social p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Ensuring the golden background stretches full width */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background-color: #FFD700; /* Golden background for the whole footer */
+    z-index: 0;
+}
+
+
+/* Top Bar */
+.top-bar {
+    background-color: #ffc83d;
+    color: #000;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.top-bar a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e94b35;
+}
+
+.navbar .menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar .search input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.navbar .search button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Main Banner */
+.main-banner {
+    background: linear-gradient(to right, #ffde59, #ffd740);
+    padding: 50px 0;
+}
+
+.main-banner .container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+.main-banner .left-content h2 {
+    font-size: 36px;
+    color: #e94b35;
+}
+
+.main-banner .left-content h3 {
+    font-size: 20px;
+    color: #007bff;
+}
+
+.main-banner .right-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fever-panel h1 {
+    color: #e94b35;
+    font-size: 36px;
+}
+
+.fever-panel p {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.fever-panel .price {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.book-now {
+    background-color: #e94b35;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Services */
+.services {
+    background-color: #004080;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.services .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.service-item img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+}
