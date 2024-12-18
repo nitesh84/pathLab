@@ -733,34 +733,6 @@ section .section-container img{
     cursor: pointer;
 }
 
-/* Main Banner */
-.main-banner {
-    background: linear-gradient(to right, #ffde59, #ffd740);
-    padding: 50px 0;
-}
-
-.main-banner .container {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
-}
-
-.main-banner .left-content h2 {
-    font-size: 36px;
-    color: #e94b35;
-}
-
-.main-banner .left-content h3 {
-    font-size: 20px;
-    color: #007bff;
-}
-
-.main-banner .right-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 .fever-panel h1 {
     color: #e94b35;
     font-size: 36px;
@@ -807,4 +779,168 @@ section .section-container img{
 
 .service-item p {
     font-size: 14px;
+}
+.main-banner .section-container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.main-banner .main-carousel {
+    width: 100%; /* Makes carousel take full width */
+    height: 250px; /* Makes carousel take full viewport height */
+    margin: 0 auto; /* Centers the carousel within the container */
+    overflow: hidden; /* Ensures no extra content is visible outside */
+}
+
+.main-banner .carousel-cell {
+    width: 100%; /* Ensures each cell takes the full width of the carousel */
+    height: 100%; /* Ensures each cell takes the full height of the carousel */
+}
+
+.main-banner .carousel-cell img {
+    width: 100%; /* Ensures images are responsive */
+    height: 45%; /* Makes the image take the full height of the carousel */
+    object-fit: cover; /* Ensures the image covers the entire space without distortion */
+    display: block;
+    margin: 0 auto;
+}
+
+
+.packages {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.test-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 18px;
+    color: #ffb100;
+    font-weight: bold;
+}
+
+.book-now {
+    background: #0052cc;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.book-now:hover {
+    background: #003b8f;
+}
+
+.view-all {
+    display: block;
+    text-align: right;
+    color: #0052cc;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Search Tests Section */
+.search-tests {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.tabs button {
+    background: #e0e0e0;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tabs button.active {
+    background: #ffb100;
+    color: #fff;
+}
+
+.test-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    background: #ffb100;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.icon-item {
+    text-align: center;
+    width: 14%;
+}
+
+.icon-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.icon-item p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.view-all {
+    text-align: right;
+    margin-top: 10px;
+    display: block;
 }
